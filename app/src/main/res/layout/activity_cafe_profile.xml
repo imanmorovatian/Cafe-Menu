@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cafeprofile.CafeProfileActivity"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image_view_cafe_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="romason"
+        android:id="@+id/text_view_cafe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/image_view_cafe_image"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:text="this is a test for bio"
+        android:id="@+id/text_view_cafe_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/text_view_cafe_name"
+        android:layout_marginTop="3dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_category_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_view_cafe_bio"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"/>
+
+
+</RelativeLayout>
