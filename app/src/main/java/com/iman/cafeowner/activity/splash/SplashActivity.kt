@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import com.iman.cafeowner.R
+import com.iman.cafeowner.activity.mainactivity.MainActivity
 import com.iman.cafeowner.activity.login.LoginActivity
+import com.iman.cafeowner.utils.App
 import com.iman.cafeowner.utils.BaseActivity
 
 class SplashActivity: BaseActivity() {
@@ -17,7 +19,7 @@ class SplashActivity: BaseActivity() {
 
         Handler().postDelayed({
             when {
-                //App.getPreference().isLoggedInProvider() -> startActivity(Intent(this, MainActivity::class.java))
+                App.getPreference().isLoggedIn() -> startActivity(Intent(this, MainActivity::class.java))
                 else -> startActivity(Intent(this, LoginActivity::class.java))
             }
             finish()

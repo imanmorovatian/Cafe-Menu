@@ -15,6 +15,12 @@ class App: Application() {
                 .build()
         )
 
+        mPreference = Preference(this)
+    }
+
+    companion object {
+        private var mPreference: Preference? = null
+        fun getPreference(): Preference = mPreference!!
     }
 
 }
