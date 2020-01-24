@@ -12,7 +12,9 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.cafeprofile.CafeProfileActivity"></activity>
+        <activity android:name=".activity.productdetail.ProductDetail"></activity>
+        <activity android:name=".activity.product.ProductsActivity" />
+        <activity android:name=".activity.cafeprofile.CafeProfileActivity" />
         <activity android:name=".activity.mainactivity.MainActivity" />
         <activity
             android:name=".activity.splash.SplashActivity"
